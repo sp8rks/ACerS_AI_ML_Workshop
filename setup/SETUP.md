@@ -14,6 +14,8 @@ Colab already includes every package the course needs except `anthropic`, which 
 
 You need **Python 3.10 or newer** and `git`.
 
+New to this? These short videos walk through it: [installing miniconda, virtual environments and VS Code](https://www.youtube.com/watch?v=jDy19p6wrA4&list=PLL0SWcFqypCl4lrzk1dMWwTUrzQZFt7y0) · [cloning a GitHub repo to follow along](https://www.youtube.com/watch?v=zb4M9mYz5TE&list=PLL0SWcFqypCl4lrzk1dMWwTUrzQZFt7y0)
+
 ```bash
 git clone https://github.com/sp8rks/ACerS_AI_ML_Workshop.git
 cd ACerS_AI_ML_Workshop

@@ -8,5 +8,4 @@ venv/
 
 # Instructor-only local files (not published)
 *.docx
-*.pptx
 Materials_Informatics_course_slides/
