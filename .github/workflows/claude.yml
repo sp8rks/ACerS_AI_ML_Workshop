@@ -16,7 +16,7 @@ jobs:
       (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
       (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
     runs-on: ubuntu-latest
-    # Allow long waits (e.g., Edison polling) without hitting a job-level limit
+    # Allow long waits (e.g., Asta AutoDiscovery runs) without hitting a job-level limit
     timeout-minutes: 180
     permissions:
       contents: read
@@ -34,15 +34,11 @@ jobs:
         uses: anthropics/claude-code-action@v1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EDISON_PLATFORM_API_KEY: ${{ secrets.EDISON_PLATFORM_API_KEY }}
           # Asta (Allen AI) auth token. Generate locally with:
           #   asta auth login
           #   asta auth print-token --raw --refresh
           ASTA_TOKEN: ${{ secrets.ASTA_TOKEN }}
-          # CHPC (University of Utah) credentials for agent-driven SSH/SLURM jobs
-          CHPC_USERNAME: ${{ secrets.CHPC_USERNAME }}
-          CHPC_PASSWORD: ${{ secrets.CHPC_PASSWORD }}
-          # Allow long-blocking foreground commands (e.g., Edison polling)
+          # Allow long-blocking foreground commands (e.g., waiting on Asta runs)
           BASH_DEFAULT_TIMEOUT_MS: "900000" # 15 min default per Bash call
           BASH_MAX_TIMEOUT_MS: "3600000" # 60 min ceiling per Bash call
         with:
