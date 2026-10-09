@@ -1,0 +1,12 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Instructor-only local files (not published)
+*.docx
+*.pptx
+Materials_Informatics_course_slides/

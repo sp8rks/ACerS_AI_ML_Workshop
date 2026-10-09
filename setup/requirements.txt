@@ -1,0 +1,10 @@
+# Core (Sessions 1-5)
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.10
+scikit-learn>=1.4
+scipy>=1.11
+jupyterlab>=4.0
+
+# Session 6 (LLMs and agents)
+anthropic>=1.0

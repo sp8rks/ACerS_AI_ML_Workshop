@@ -1,0 +1,120 @@
+{
+  "description": "SYNTHETIC teaching corpus for Session 6. These paragraphs were written for this workshop in the style of ceramics abstracts. Values are representative of typical literature ranges but are NOT quotations from, or results of, any specific publication. Do not cite them as data.",
+  "property_units": {
+    "hardness": "GPa",
+    "fracture_toughness": "MPa*m^0.5",
+    "flexural_strength": "MPa",
+    "elastic_modulus": "GPa",
+    "relative_density": "%",
+    "sintering_temperature": "C",
+    "grain_size": "um",
+    "thermal_conductivity": "W/(m*K)",
+    "band_gap": "eV",
+    "ionic_conductivity": "mS/cm",
+    "dielectric_constant": "dimensionless",
+    "curie_temperature": "C"
+  },
+  "snippets": [
+    {
+      "id": "S01",
+      "title": "Two-step sintering of 3 mol% yttria-stabilized tetragonal zirconia",
+      "text": "Commercial 3Y-TZP powders were consolidated by two-step sintering, with a first step at 1450 °C followed by a prolonged hold at 1150 °C. The resulting ceramics reached 99.2% of theoretical density while retaining an average grain size of 0.28 µm. Vickers hardness measured at 9.8 N was 12.5 GPa and the indentation fracture toughness was 5.2 MPa·m^1/2. Conventional single-step sintering produced comparable density only with substantial grain growth.",
+      "records": [
+        {"material": "3Y-TZP", "property": "sintering_temperature", "value": 1450},
+        {"material": "3Y-TZP", "property": "relative_density", "value": 99.2},
+        {"material": "3Y-TZP", "property": "grain_size", "value": 0.28},
+        {"material": "3Y-TZP", "property": "hardness", "value": 12.5},
+        {"material": "3Y-TZP", "property": "fracture_toughness", "value": 5.2}
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "Role of MgO doping in the densification of alumina",
+      "text": "Alumina doped with 0.05 wt% MgO was sintered in air at 1550 °C for 2 h. MgO suppressed abnormal grain growth, giving a uniform microstructure with a mean grain size of 1.8 µm and a final relative density of 99.6%. Four-point flexural strength of the doped material was 420 MPa, compared with 310 MPa for undoped alumina processed identically.",
+      "records": [
+        {"material": "Al2O3 + 0.05 wt% MgO", "property": "sintering_temperature", "value": 1550},
+        {"material": "Al2O3 + 0.05 wt% MgO", "property": "grain_size", "value": 1.8},
+        {"material": "Al2O3 + 0.05 wt% MgO", "property": "relative_density", "value": 99.6},
+        {"material": "Al2O3 + 0.05 wt% MgO", "property": "flexural_strength", "value": 420},
+        {"material": "Al2O3 (undoped)", "property": "flexural_strength", "value": 310}
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "High thermal conductivity silicon nitride for power-electronics substrates",
+      "text": "β-Si3N4 ceramics containing Y2O3 and MgO sintering additives were gas-pressure sintered at 1900 °C for 12 h. Extended annealing reduced lattice oxygen and increased the thermal conductivity to 92 W/(m·K). The elongated-grain microstructure also delivered a fracture toughness of 7.1 MPa·m^1/2 and a flexural strength of 780 MPa, making the material attractive for substrates in high-power modules.",
+      "records": [
+        {"material": "Si3N4 (Y2O3-MgO additives)", "property": "sintering_temperature", "value": 1900},
+        {"material": "Si3N4 (Y2O3-MgO additives)", "property": "thermal_conductivity", "value": 92},
+        {"material": "Si3N4 (Y2O3-MgO additives)", "property": "fracture_toughness", "value": 7.1},
+        {"material": "Si3N4 (Y2O3-MgO additives)", "property": "flexural_strength", "value": 780}
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "ZrB2–SiC ultra-high temperature ceramics for hypersonic leading edges",
+      "text": "ZrB2 containing 20 vol% SiC was densified by spark plasma sintering at 1950 °C to near-full density. Room-temperature flexural strength was 610 MPa and Vickers hardness was 21.3 GPa. During oxidation in static air at 1500 °C, a protective borosilicate glass layer formed, limiting the oxide scale thickness to 45 µm after 10 h. The Young's modulus measured by impulse excitation was 520 GPa.",
+      "records": [
+        {"material": "ZrB2-20 vol% SiC", "property": "sintering_temperature", "value": 1950},
+        {"material": "ZrB2-20 vol% SiC", "property": "flexural_strength", "value": 610},
+        {"material": "ZrB2-20 vol% SiC", "property": "hardness", "value": 21.3},
+        {"material": "ZrB2-20 vol% SiC", "property": "elastic_modulus", "value": 520}
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "Garnet solid electrolytes with gallium substitution",
+      "text": "Ga-substituted Li7La3Zr2O12 (LLZO) pellets were prepared by solid-state reaction and sintered at 1100 °C in MgO crucibles. Gallium stabilized the cubic garnet phase and the pellets reached 96% relative density. Electrochemical impedance spectroscopy gave a total ionic conductivity of 1.3 mS/cm at 25 °C, with negligible electronic conductivity. Lithium loss during sintering was mitigated by a mother-powder bed.",
+      "records": [
+        {"material": "Ga-LLZO", "property": "sintering_temperature", "value": 1100},
+        {"material": "Ga-LLZO", "property": "relative_density", "value": 96},
+        {"material": "Ga-LLZO", "property": "ionic_conductivity", "value": 1.3}
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "Grain-size effects on the permittivity of barium titanate",
+      "text": "Dense BaTiO3 ceramics with grain sizes between 0.3 and 10 µm were produced by varying the sintering schedule. The room-temperature relative permittivity peaked at 4200 for a grain size near 1.1 µm, roughly three times the value of coarse-grained samples. The Curie temperature remained close to 125 °C for all samples, indicating that the permittivity maximum is not caused by a shift of the phase transition.",
+      "records": [
+        {"material": "BaTiO3", "property": "dielectric_constant", "value": 4200},
+        {"material": "BaTiO3", "property": "grain_size", "value": 1.1},
+        {"material": "BaTiO3", "property": "curie_temperature", "value": 125}
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "Aluminum nitride substrates with low oxygen content",
+      "text": "Aluminum nitride sintered with 3 wt% Y2O3 at 1850 °C in flowing nitrogen achieved a thermal conductivity of 175 W/(m·K) after the grain-boundary yttrium aluminates were partially removed by carbothermal treatment. Optical absorption measurements on thin sections confirmed a band gap of approximately 6.0 eV. The material is electrically insulating and well matched in thermal expansion to silicon.",
+      "records": [
+        {"material": "AlN (3 wt% Y2O3)", "property": "sintering_temperature", "value": 1850},
+        {"material": "AlN (3 wt% Y2O3)", "property": "thermal_conductivity", "value": 175},
+        {"material": "AlN (3 wt% Y2O3)", "property": "band_gap", "value": 6.0}
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "Mechanical properties of a five-component high-entropy carbide",
+      "text": "Single-phase rock-salt (Hf0.2Zr0.2Ta0.2Nb0.2Ti0.2)C was synthesized by carbothermal reduction and densified by spark plasma sintering at 2000 °C. Nanoindentation hardness reached 29.5 GPa and the elastic modulus was 479 GPa, both exceeding the rule-of-mixtures average of the constituent binary carbides. The enhancement is attributed to solid-solution strengthening from lattice distortion.",
+      "records": [
+        {"material": "(Hf0.2Zr0.2Ta0.2Nb0.2Ti0.2)C", "property": "sintering_temperature", "value": 2000},
+        {"material": "(Hf0.2Zr0.2Ta0.2Nb0.2Ti0.2)C", "property": "hardness", "value": 29.5},
+        {"material": "(Hf0.2Zr0.2Ta0.2Nb0.2Ti0.2)C", "property": "elastic_modulus", "value": 479}
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "Phase-dependent photocatalysis in titania thin films",
+      "text": "Sol-gel TiO2 films were annealed at 450 °C to obtain anatase or at 900 °C to obtain rutile. Diffuse reflectance gave optical band gaps of 3.2 eV for anatase and 3.0 eV for rutile. Despite its wider gap, the anatase film degraded methylene blue about twice as fast, which we attribute to longer photogenerated carrier lifetimes.",
+      "records": [
+        {"material": "TiO2 (anatase)", "property": "band_gap", "value": 3.2},
+        {"material": "TiO2 (rutile)", "property": "band_gap", "value": 3.0}
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Perspective: open challenges in cold sintering of ceramics",
+      "text": "Cold sintering uses a transient liquid phase and uniaxial pressure to densify ceramics at temperatures far below conventional sintering. In this perspective we discuss open questions about the dissolution–precipitation mechanism, the role of the transient solvent chemistry, and the difficulty of scaling the process beyond small pellets. We argue that in situ characterization and shared benchmark datasets are needed before cold sintering can be widely adopted.",
+      "records": []
+    }
+  ]
+}
