@@ -9,3 +9,6 @@ venv/
 # Instructor-only local files (not published)
 *.docx
 Materials_Informatics_course_slides/
+
+# Editable lecture decks (large); post PDF exports instead
+slides/*.pptx
