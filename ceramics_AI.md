@@ -2,7 +2,7 @@
 
 **Purpose:** Source material for the first 2-hour session of the ACerS short course *Practical AI and Machine Learning for Materials Science*. The goal of Class 1 is to motivate what materials informatics **is** (and **isn't**) using concrete, high-quality examples drawn specifically from ceramics and glass.
 
-**Provenance:** Compiled 2026-10-09 from five Asta (Allen Institute for AI) literature searches — one each for regression, classification, image segmentation, generative models, and AI agents/autonomous labs — filtered and annotated for teaching value.
+**Provenance:** Compiled 2026-10-09 from five Asta (Allen Institute for AI) literature searches — one each for regression, classification, image segmentation, generative models, and AI agents/autonomous labs — filtered and annotated for teaching value. The "More breadth" subsections were added 2026-10-12 to support additional slides; Asta was unavailable that day (expired token), so those entries were verified against the publisher/index records via web search instead.
 
 ---
 
@@ -44,6 +44,17 @@ The workhorse of materials informatics. Great for introducing features/descripto
 - **Machine learning unveils composition-property relationships in chalcogenide glasses** — *Acta Materialia* (2021). [arXiv](https://arxiv.org/pdf/2106.07749.pdf)
   Extends the paradigm beyond oxides to chalcogenides (photonics applications).
 
+### More breadth (added 2026-10-12)
+
+- **Machine learning directed search for ultraincompressible, superhard materials** — Mansouri Tehrani, Brgoch et al. (co-author: T. Sparks — a story you can tell firsthand), *Journal of the American Chemical Society* 140, 9844-9853 (2018). [Open PDF](https://par.nsf.gov/servlets/purl/10094086)
+  Support vector machine regression of bulk and shear moduli screened **118,287 compounds**; two predictions (a Re-W carbide and a Mo-W borocarbide — hard ceramics!) were synthesized and confirmed superhard (Vickers > 40 GPa at low load), with diamond-anvil-cell moduli within 10% of prediction. The full predict → synthesize → verify loop on one slide.
+
+- **Predicting the dissolution kinetics of silicate glasses using machine learning** — Anoop Krishnan, Smedskjaer, Bauchy et al., *Journal of Non-Crystalline Solids* (2018). [arXiv](https://arxiv.org/abs/1712.06018)
+  Neural networks predict aluminosilicate dissolution rates across pH where linear models fail. Chemical durability is *the* property for nuclear waste glasses, bioglasses, and display glass — regression on a property students may not expect ML to touch. (Topology-informed follow-up: *npj Materials Degradation* 2019.)
+
+- **GlassNet: a multitask deep neural network for predicting many glass properties** — Cassar, *Ceramics International* (2023). [arXiv](https://arxiv.org/abs/2303.15538)
+  One network, trained on 218,000+ SciGlass compositions, predicting **85 properties** simultaneously (optical, thermal, mechanical, viscosity...). Open-source in GlassPy — students can run it in class. Closes the arc that began with the single-property Tg paper above: from one property in 2018 to 85 in 2023.
+
 ### Teaching angles
 - Compare data regimes: 55,000 glasses vs. 254 dielectric ceramics — what changes about model choice and validation?
 - Interpretability: which oxides raise Tg? SHAP/feature-importance plots make great slides.
@@ -68,6 +79,17 @@ Introduces decision boundaries, class imbalance, and screening funnels.
 
 - **Soliquidy: a descriptor for atomic geometrical confusion** — *npj Computational Materials* (2025). [Link](https://api.semanticscholar.org/CorpusId:275994053)
   A modern descriptor-engineering story applied to glass/no-glass classification of metallic thin films. Useful to make the point that *feature design is where the physics enters*.
+
+### More breadth (added 2026-10-12)
+
+- **Holistic computational structure screening of more than 12,000 candidates for solid lithium-ion conductor materials** — Sendek et al. (Stanford), *Energy & Environmental Science* (2017). [DOI](https://doi.org/10.1039/C6EE02697D)
+  A logistic-regression classifier for "superionic or not" — trained on only a few dozen literature measurements — funnels **12,831 Li-containing solids down to 21 promising ceramic electrolytes**, roughly a million times faster than DFT per candidate. The cleanest screening-funnel slide you can draw, and it's battery-relevant.
+
+- **New tolerance factor to predict the stability of perovskite oxides and halides** — Bartel et al., *Science Advances* 5, eaav0693 (2019). [DOI](https://doi.org/10.1126/sciadv.aav0693)
+  ML (the SISSO symbolic-regression method) rediscovered and *beat* a 100-year-old ceramics heuristic: the learned one-line descriptor τ classifies perovskite vs. non-perovskite at 92% accuracy where Goldschmidt's 1926 tolerance factor manages 74%. Perfect "ML can sharpen the rules you already teach" moment — the output is a formula, not a black box.
+
+- **Machine learning modeling of superconducting critical temperature** — Stanev, Takeuchi et al., *npj Computational Materials* 4, 29 (2018). [DOI](https://doi.org/10.1038/s41524-018-0085-8)
+  Trained on 12,000+ SuperCon entries, classifies materials as above/below Tc = 10 K at about 92% accuracy — the cuprate superconductors at the heart of it are ceramics — then screens a crystal database to propose 30+ new oxide candidates. Classification and regression chained into one discovery pipeline.
 
 ### Teaching angles
 - Regression vs. classification is often just a reframing: Tg (number) vs. glass former yes/no (label).
@@ -103,6 +125,17 @@ Computer vision applied to the micrographs every ceramist already collects. Very
 - Baseline for contrast: **Image segmentation variants for semi-automated quantitative microstructural analysis with ImageJ** — *Praktische Metallographie* (2020). [Link](https://api.semanticscholar.org/CorpusId:228845597)
   The classical thresholding workflow students may already use — frames *why* learned segmentation is a step change.
 
+### More breadth (added 2026-10-12)
+
+- **Semantic segmentation-assisted deep learning for quantitative multi-phase microstructural analysis** — Hwang et al. (KIST), *Journal of Power Sources* 471, 228458 (2020). [DOI](https://doi.org/10.1016/j.jpowsour.2020.228458)
+  Segments the three-phase LSC/GDC/pore microstructure of solid oxide fuel cell cathodes from FIB-SEM slices and automatically extracts the quantities an electrochemist actually wants: phase fractions, particle sizes, and **triple-phase-boundary density**. Segmentation feeding directly into device performance metrics.
+
+- **Deep learning-assisted microstructural analysis of Ni/YSZ anode composites for solid oxide fuel cells** — KIST group, *Materials Characterization* (2021). [DOI](https://doi.org/10.1016/j.matchar.2021.110906)
+  Companion study on the classic Ni/YSZ cermet anode; notable for handling *ugly real data* — charging artifacts, curtaining, faint phase boundaries in FIB-SEM — exactly the images students' own instruments produce.
+
+- **Machine-learning-revealed statistics of the particle-carbon/binder detachment in lithium-ion battery cathodes** — Jiang et al., *Nature Communications* 11, 2310 (2020). [DOI](https://doi.org/10.1038/s41467-020-16233-5)
+  Mask R-CNN segments **650+ individual NMC oxide particles** in synchrotron X-ray nano-tomography of a battery cathode, turning images into degradation statistics (detachment correlates with charging rate). Shows segmentation scaled to population-level statistics no human would trace by hand — and connects ceramics to batteries for your electrochemistry-inclined students.
+
 ### Teaching angles
 - Before/after slide: manual ImageJ thresholding vs. deep-learning segmentation on the same micrograph.
 - Segmentation outputs feed straight into properties students care about: grain size distributions, porosity, crack networks.
@@ -137,6 +170,17 @@ Flips the problem: instead of predicting properties from a composition, generate
 - **Deep learning aided rational design of oxide glasses** — Ravinder et al., *Materials Horizons* (2020). [Link](https://doi.org/10.1039/c9mh01420a)
   Property maps over oxide glass composition space ("glass selection charts") used for design — an accessible, glass-native stepping stone before full generative models.
 
+### More breadth (added 2026-10-12)
+
+- **Microstructure generation via generative adversarial network for heterogeneous, topologically complex 3D materials** — Hsu, Holm, Salvador et al. (CMU/NETL), *JOM* (2021, arXiv 2020). [arXiv](https://arxiv.org/abs/2006.13886)
+  A GAN generates synthetic **3D solid oxide fuel cell electrode microstructures** that match the real ones statistically *and* electrochemically (finite-element performance distributions agree; the conventional DREAM.3D generator's don't). Generative models for *microstructure*, not just crystal structures — unlimited realistic digital twins for simulation.
+
+- **Crystal Diffusion Variational Autoencoder (CDVAE)** — Xie et al. (MIT), *ICLR* (2022). [arXiv](https://arxiv.org/abs/2110.06197)
+  The missing link in the lineage slide: the paper that brought **diffusion** (the DALL-E/Stable Diffusion idea) to crystal generation, between the VAE/GAN era (iMatGen, FTCP) and MatterGen.
+
+- **Crystal structure generation with autoregressive large language modeling (CrystaLLM)** — Antunes, Butler & Grau-Crespo, *Nature Communications* 15, 10570 (2024). [DOI](https://doi.org/10.1038/s41467-024-54639-7)
+  A GPT-style language model trained on millions of CIF files generates plausible inorganic crystal structures *as text* — "ChatGPT, but it speaks crystallography." Instantly intuitive in the LLM era, and there's a free website where students can generate structures live during class.
+
 ### Teaching angles
 - Distinguish **inverse design via optimization** (ML model + genetic algorithm — the optical glass paper) from **true generative models** (VAE/GAN/diffusion sampling new structures). Both count; the former is much easier to adopt.
 - Honest caveats: synthesizability of generated crystals is the open problem (sets up section 5's A-Lab).
@@ -167,6 +211,17 @@ The frontier: AI that plans, executes, and iterates on experiments.
 
 - **Evaluating LLM-based AI agents integrated with materials synthesis tools: the case of atomic layer deposition** — (2026). [Link](https://api.semanticscholar.org/CorpusId:291531204)
   A sober evaluation paper — useful counterweight showing agents are promising but far from solved.
+
+### More breadth (added 2026-10-12)
+
+- **Accelerated search for BaTiO3-based piezoelectrics with vertical morphotropic phase boundary using Bayesian learning** — Xue, Balachandran, Lookman et al., *PNAS* 113, 13301-13306 (2016). [DOI](https://doi.org/10.1073/pnas.1607412113)
+  The ceramics-native active-learning classic that predates the robots: Bayesian learning plus Landau theory guided the synthesis of a (Ba,Ca)TiO3-Ba(Ti,Zr)O3 piezoelectric with better temperature stability than anything in the training set. Human hands did the sintering — the *algorithm* chose what to make next. The first rung on the autonomy ladder.
+
+- **A mobile robotic chemist** — Burger et al. (Cooper group, Liverpool), *Nature* 583, 237-241 (2020). [DOI](https://doi.org/10.1038/s41586-020-2442-2)
+  A free-roaming robot ran **688 photocatalysis experiments in 8 days** across a ten-variable space, guided by batched Bayesian optimization, finding mixtures 6x more active than the start. The memorable detail: it uses the *same benches and vials as humans* — autonomy retrofitted into an ordinary lab rather than a purpose-built one.
+
+- **Autonomous chemical research with large language models (Coscientist)** — Boiko, MacKnight, Kline & Gomes (CMU), *Nature* 624, 570-578 (2023). [DOI](https://doi.org/10.1038/s41586-023-06792-0)
+  A GPT-4-driven agent that reads documentation, writes code, and plans and executes real experiments (including successful optimization of Pd-catalyzed cross-couplings). The clearest published example of "LLM as scientist" — and a good prompt for discussing what transfers (and doesn't) to solid-state ceramics, where synthesis is slower and feedback is scarcer.
 
 ### Teaching angles
 - Ladder of autonomy: human-designed experiments → active learning suggests next experiment (CAMEO) → robot executes synthesis (A-Lab) → LLM agents plan campaigns (SPARKS).
