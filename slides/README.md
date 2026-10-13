@@ -5,7 +5,7 @@ Slides for each session are posted here **after** that session is taught.
 | # | Date | Topic | Slides |
 |---|---|---|---|
 | 1 | Tue 10/13 | What materials informatics is (and isn't) | [PDF](01_materials_informatics_intro.pdf) |
-| 2 | Wed 10/14 | Feature engineering and CBFV | *posted after class* |
+| 2 | Wed 10/14 | Feature engineering, CBFV, crystal graphs and microstructure | [PDF](02_feature_engineering_cbfv.pdf) |
 | 3 | Thu 10/15 | Supervised learning: regression, classification, validation | *posted after class* |
 | 4 | Tue 10/20 | Model interpretation and trust | *posted after class* |
 | 5 | Wed 10/21 | Bayesian optimization and active learning | *posted after class* |
