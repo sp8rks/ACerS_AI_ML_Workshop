@@ -91,6 +91,8 @@ Each session has a short list of recorded lectures from the semester-long course
 - **Demo:** Gaussian process + Expected Improvement / UCB written from scratch; a build → suggest → update loop on a simulated sintering campaign
 - **Key concept:** greedy search gets trapped on a local optimum; a small exploration bonus finds the global one
 - **Hands-on:** benchmark BO vs. random search on **real** silver-nanoparticle flow-synthesis experiments, plus active learning for model building
+- **Thermoelectric discovery:** search 612 real p-type compositions for high room-temperature power factor in batches of 5, with a supply-risk constraint (HHI) and a power factor vs. supply risk Pareto front
+- **Formulations:** optimize a 5-component polymer/nanotube blend whose fractions must sum to 100%; batches of 4 vs. one at a time vs. random
 </details>
 
 <details>
@@ -101,6 +103,9 @@ Each session has a short list of recorded lectures from the semester-long course
 - **Demo:** retrieval-augmented generation with citations, and why retrieval quality limits the answer
 - **Demo:** an agent loop where the LLM calls *your* ML model, a database lookup and a literature search
 - **Capstone:** screen 135 carbides, nitrides and diborides → predict with uncertainty → choose the next 3 experiments → LLM-drafted decision memo
+- **Literature mining at scale** (KnowMat), **local vs. cloud LLMs** with a cost estimate, and a **foundation model** (CHGNet) predicting bulk moduli it was never trained on
+- **Capstone tracks:** stiff ceramics, thermoelectrics (Pareto shortlist → memo), formulations, micrographs, literature → dataset
+- **Behind the scenes:** how this course was built with an AI coding agent, and how every number was checked
 - **Needs** an Anthropic API key for the LLM cells (see [setup/SETUP.md](setup/SETUP.md#llm-api-key-session-6)). Without one the notebook runs in offline mode.
 </details>
 

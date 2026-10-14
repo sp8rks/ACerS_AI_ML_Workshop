@@ -15,5 +15,7 @@ torch>=2.2
 # Session 1 (automated EDA; also installed inline in the notebook for Colab)
 ydata-profiling>=4.12
 
-# Session 6 (LLMs and agents)
+# Session 6 (LLMs and agents); chgnet + ase are optional (foundation-model demo, installed inline in Colab)
+chgnet>=0.3
+ase>=3.23
 anthropic>=1.0
