@@ -14,6 +14,7 @@ DATASETS = {
     "heat_capacity_raw": "heat_capacity_raw.csv",
     "heat_capacity_clean": "heat_capacity_clean.csv",
     "agnp": "agnp_flow_synthesis.csv",
+    "thermoelectric": "thermoelectric_sysTEm.csv",
 }
 
 
