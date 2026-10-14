@@ -6,6 +6,7 @@ scikit-learn>=1.4
 scipy>=1.11
 jupyterlab>=4.0
 pillow>=10.0
+scikit-image>=0.22   # Session 4 micrographs (preinstalled in Colab)
 
 # Session 2 crystal graph network (preinstalled in Colab; CPU build is fine)
 # pip install torch --index-url https://download.pytorch.org/whl/cpu

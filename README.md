@@ -77,10 +77,11 @@ Each session has a short list of recorded lectures from the semester-long course
 <summary><b>Session 4: Interpretation and trust</b></summary>
 
 - **Optional pre-watch:** 📺 [17. Best Practices in Materials Informatics](https://www.youtube.com/watch?v=5fMr4mYuCXI&list=PLL0SWcFqypCl4lrzk1dMWwTUrzQZFt7y0) · 📺 [20. Can we extrapolate to extraordinary materials?](https://www.youtube.com/watch?v=siphXMgHJ6A&list=PLL0SWcFqypCl4lrzk1dMWwTUrzQZFt7y0)
-- **Hands-on:** clean a raw dataset (negative temperatures, negative heat capacities, missing values) and measure the effect
+- **Hands-on:** clean a raw dataset, then use **physics as a data check** (zT = S²σT/κ catches unit errors a statistical outlier test misses)
 - **Demo:** impurity vs. permutation importance, correlated features, partial dependence. The model rediscovers that stiffness tracks cohesive energy.
-- **Uncertainty:** ensemble σ, calibration, and domain of applicability (nearest-neighbor distance)
-- **Discussion:** when NOT to trust a model: new chemistries (hold out all oxides), extrapolation beyond the training range
+- **Physics + ML:** build thermoelectric zT from S, σ and κ; see where physics helps (extrapolating in temperature) and where it doesn't. Where PINNs fit.
+- **Micrographs:** measure grain size and porosity by line intercept, classical segmentation and a trained pixel classifier, graded against a synthetic ground truth and against published grain sizes for real BaTiO₃ SEM images; carry the measurements into a property model
+- **Discussion:** when NOT to trust a model or a measurement: new chemistries, extrapolation, uncertainty, unvalidated image features
 </details>
 
 <details>
