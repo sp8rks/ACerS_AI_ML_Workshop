@@ -81,6 +81,7 @@ Each session has a short list of recorded lectures from the semester-long course
 - **Demo:** impurity vs. permutation importance, correlated features, partial dependence. The model rediscovers that stiffness tracks cohesive energy.
 - **Physics + ML:** build thermoelectric zT from S, σ and κ; see where physics helps (extrapolating in temperature) and where it doesn't. Where PINNs fit.
 - **Micrographs:** measure grain size and porosity by line intercept, classical segmentation and a trained pixel classifier, graded against a synthetic ground truth and against published grain sizes for real BaTiO₃ SEM images; carry the measurements into a property model
+- **More data:** one-line loaders for open ceramic and glass datasets (`workshop_utils.open_data`): UO₂ grain boundaries traced by hand, micro-CT of sintered glass beads, 30,000 glasses from SciGlass, BaTiO₃ sintering, EBSD of MgO, coating cross-sections, ferrite tile defects, matminer tables. Each is checked against an independent label.
 - **Discussion:** when NOT to trust a model or a measurement: new chemistries, extrapolation, uncertainty, unvalidated image features
 </details>
 
@@ -93,6 +94,7 @@ Each session has a short list of recorded lectures from the semester-long course
 - **Hands-on:** benchmark BO vs. random search on **real** silver-nanoparticle flow-synthesis experiments, plus active learning for model building
 - **Thermoelectric discovery:** search 612 real p-type compositions for high room-temperature power factor in batches of 5, with a supply-risk constraint (HHI) and a power factor vs. supply risk Pareto front
 - **Formulations:** optimize a 5-component polymer/nanotube blend whose fractions must sum to 100%; batches of 4 vs. one at a time vs. random
+- **Formulation vectors:** describe a coating by the fraction-weighted properties of its pigments (a CBFV for mixtures, backed by Kubelka–Munk physics) so the model can predict recipes with a pigment it has never seen
 </details>
 
 <details>
@@ -114,7 +116,7 @@ Each session has a short list of recorded lectures from the semester-long course
 ```
 ├── sessions/          one folder per session, each with a self-contained notebook
 ├── data/              all datasets used in the course (see data/README.md)
-├── workshop_utils/    small helper package: formula parsing, CBFV featurizer, plotting, model feedback
+├── workshop_utils/    small helper package: formula parsing, CBFV featurizer, plotting, model feedback, open-data loaders
 ├── setup/             installation guide, requirements, environment check notebook
 └── slides/            lecture slides, posted after each session
 ```

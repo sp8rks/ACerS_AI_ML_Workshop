@@ -16,6 +16,7 @@ DATASETS = {
     "agnp": "agnp_flow_synthesis.csv",
     "thermoelectric": "thermoelectric_sysTEm.csv",
     "p3ht_cnt": "p3ht_cnt_films.csv",
+    "coatings": "coating_formulations_simulated.csv",
 }
 
 
