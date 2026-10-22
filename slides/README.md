@@ -9,7 +9,7 @@ Slides for each session are posted here **after** that session is taught.
 | 3 | Thu 10/15 | Supervised learning: regression, classification, validation | [PDF](03_supervised_learning.pdf) |
 | 4 | Tue 10/20 | Model interpretation and trust | [PDF](04_interpretation_and_trust.pdf) |
 | 5 | Wed 10/21 | Bayesian optimization and active learning | [PDF](05_bayesian_optimization.pdf) |
-| 6 | Thu 10/22 | LLMs, agents and the end-to-end capstone | *posted after class* |
+| 6 | Thu 10/22 | LLMs, agents and the end-to-end capstone | [PDF](06_llms_and_agents.pdf) |
 
 Until then, see the [optional pre-watch videos](../README.md#-optional-pre-watch-videos) and the [semester course slides](https://github.com/sp8rks/MaterialsInformatics/tree/main/course_notes).
 
